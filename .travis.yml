@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: CazFAFevoyJ/k7ny6eb1TqayPeQnxcSs1hxZffHgICEoJ1cyM23Fb9PyO26SBQ7OGW9aJ+SxqhuOGPXfy6Ol322uEpPKWbb7MANyWc9BwenHmm7utuE3utU5YpKuxDNYPp1mjKw4CA7fY91murIuOJJmebdcBmacaTSKSbB02/6M9v0dI2Sp939HN6LR6LdsXtmgsw/D/qCQGMn64Cq0scOkXe3z+FVD8qBGwpIAhshLOLstnrYXE2qXWvoYn8iugeNh3SaDZj+ikZNDcVf2TTs6lMR0JqPFLKxbicl107DUcvCMxs0ngNDuTgzcmmaMZE/FpHA2nVAxekMjQBeJysHIo89GMkECh+hnchDTp0x/S9COM+4gvdfVpNI9Y2nnDaERGrtmzsOwNaiC3ROYFq2NPf7gkz4ux+a37X+SiLLiDeTYYkx3UX4riZ3lNFdeO9jdYLD7eVr71CZmqv93v4uApqprdN/OjvKNwGZeEOuo6/Qs9ZJAvQv5rgDvfWCR85GQJAE51uRWL9gM6SzOHkJRp/KvFzskIopt2F8HgRXsEX5YGryoC7n5e80XIKU6essmwxqE+8Rj0xPoRlI3LHFaSyuRPfhQ7gCugI6fzLBEhLkRAx1+3yLqq4hczoH0okp9S2/7176MabDnZgmVdJzViYFIN0v4pwFNfduyaQM=
+  app: react-trello-testing
+  on:
+    repo: Btan579/react-trello-testing
